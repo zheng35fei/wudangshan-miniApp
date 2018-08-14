@@ -2,8 +2,8 @@ Page({
   data: {
     images: [
               '../../image/index/index01.jpg',
-              '../../images/index02.jpg', 
-              '../../images/index03.png'
+              '../../image/index/index02.jpg', 
+              '../../image/index/index03.png'
             ],
     indicatorDots: true,
     autoplay: true,
@@ -19,17 +19,17 @@ Page({
     vertical2:true,
     images3: [
               {
-                img:'../../images/index01.jpg',
+                img:'../../image/index/index01.jpg',
                 text:'2018中国名山赛”5月20日在武当山“开跑”',
                 price:140
               },
               { 
-                img:'../../images/index02.jpg',
+                img:'../../image/index/index02.jpg',
                 text:'好消息！《道典武当》大型山水实景演出即将在玉虚宫华丽上演！', 
                 price:230
               }, 
               { 
-                img:'../../images/index03.png',
+                img:'../../image/index/index03.png',
                 text:'水电费第三方第三方的沉甸甸的',
                 price:540
               }
