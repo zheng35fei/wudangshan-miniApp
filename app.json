@@ -28,7 +28,7 @@
     "defaultTitle": "武当山",
     "backgroundColor": "#F5F5F9",
     "pullRefresh": true,
-    "allowsBounceVertical": true
+    "allowsBounceVertical": "YES"
   },
   "tabBar": {
     "textColor": "#fff",
