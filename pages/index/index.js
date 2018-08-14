@@ -40,34 +40,42 @@ Page({
     indexNav:[
          {
            img:'../../image/index/nav1.png',
-           text:'景区门票'
+           text:'景区门票',
+           url:'/pages/park/list'
          },
          {
            img:'../../image/index/nav2.png',
+           url:'/pages/park/list',
            text:'酒店住宿'
          },
          {
            img:'../../image/index/nav3.png',
+           url:'/pages/park/list',
            text:'自由行'
          },
          {
            img:'../../image/index/nav4.png',
+           url:'/pages/park/list',
            text:'武当山369'
          },
          {
            img:'../../image/index/nav5.png',
+           url:'/pages/park/list',
            text:'美食餐饮'
          },
          {
            img:'../../image/index/nav6.png',
+           url:'/pages/park/list',
            text:'特产商品'
          },
          {
            img:'../../image/index/nav7.png',
+           url:'/pages/park/list',
            text:'游记攻略'
          },
          {
            img:'../../image/index/nav8.png',
+           url:'/pages/park/list',
            text:'新闻资讯'
          }
     ],

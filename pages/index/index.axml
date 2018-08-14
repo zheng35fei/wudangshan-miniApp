@@ -19,8 +19,10 @@
   </view>
   <view class="indexNav">
     <view class="nav-item" a:for="{{indexNav}}">
-      <image src="{{item.img}}" mode="scaleToFill" class="navImg"/>
-      <text>{{item.text}}</text>  
+      <navigator url="{{item.url}}" redirect hover-class="className">
+         <image src="{{item.img}}" mode="scaleToFill" class="navImg"/>
+         <text>{{item.text}}</text>  
+      </navigator>
     </view>
   </view> 
   <view class="top-announcement">
