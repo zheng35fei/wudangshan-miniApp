@@ -1,7 +1,7 @@
 Page({
   data: {
     images: [
-              '../../images/index01.jpg',
+              '../../image/index/index01.jpg',
               '../../images/index02.jpg', 
               '../../images/index03.png'
             ],
