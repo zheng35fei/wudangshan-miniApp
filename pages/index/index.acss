@@ -105,7 +105,7 @@ html,body{
    margin-right: 5px
 }
 .top-announcement .top-news{
-  width: 90%;
+  width: 88%;
   display: inline-block; 
   white-space: nowrap;
   overflow: hidden; 
@@ -259,7 +259,8 @@ html,body{
 }
 .find-money .find-left{
     color: #f66;
-    margin-right: 10px;
+    margin-right: 5px;
+    float: left;
 }
 .find-money .find-left label{
     color: #999;
@@ -268,11 +269,15 @@ html,body{
 .find-money .find-right{
     color: #999;
     font-size: 12px;
+    float: left;
+    height: 25px;
+    line-height: 27px;
 }
 
-
-
-
+.find-all .find-con .tab-show{display: inline-block;}
+.find-all .find-con .tab-hide{display: none;}
+.find-all .find-ul .add-tabing{color: #ff9900;}
+.find-all .find-ul .add-tab{color: #000;}
 
 
 

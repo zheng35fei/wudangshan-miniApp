@@ -18,37 +18,9 @@
     <view  class="miniAppIcon icon-ss"></view>
   </view>
   <view class="indexNav">
-    <view class="nav-item">
-      <image src="../../image/index/nav1.png" mode="scaleToFill" class="navImg"/>
-      <text>景区门票</text>  
-    </view>
-    <view class="nav-item">
-      <image src="../../image/index/nav2.png" mode="scaleToFill" class="navImg"/>
-      <text>酒店住宿</text>  
-    </view>
-    <view class="nav-item">
-      <image src="../../image/index/nav3.png" mode="scaleToFill" class="navImg"/>
-      <text>自由行</text>  
-    </view>
-    <view class="nav-item">
-      <image src="../../image/index/nav4.png" mode="scaleToFill" class="navImg"/>
-      <text>武当369</text>  
-    </view>
-    <view class="nav-item">
-      <image src="../../image/index/nav5.png" mode="scaleToFill" class="navImg"/>
-      <text>美食餐饮</text>  
-    </view>
-    <view class="nav-item">
-      <image src="../../image/index/nav6.png" mode="scaleToFill" class="navImg"/>
-      <text>特产商品</text>  
-    </view>
-    <view class="nav-item">
-      <image src="../../image/index/nav7.png" mode="scaleToFill" class="navImg"/>
-      <text>游记攻略</text>  
-    </view>
-    <view class="nav-item">
-      <image src="../../image/index/nav8.png" mode="scaleToFill" class="navImg"/>
-      <text>新闻资讯</text>  
+    <view class="nav-item" a:for="{{indexNav}}">
+      <image src="{{item.img}}" mode="scaleToFill" class="navImg"/>
+      <text>{{item.text}}</text>  
     </view>
   </view> 
   <view class="top-announcement">
@@ -69,38 +41,22 @@
     </view>
   </view>
   <view class="jp-tj" >
-     <image src="../../images/title1.png" mode="scaleToFill" class="indexTitleImg"/>
+     <image src="../../image/index/title1.png" mode="scaleToFill" class="indexTitleImg"/>
      <view class="jp-all">      
         <scroll-view class="scroll-view_H" scroll-x="{{true}}">
-            <view class="tj-box">
-              <image src="../../image/index/index01.jpg" mode="scaleToFill" /> 
-              <text>梦幻武当演出</text>
+            <view class="tj-box" a:for={{tjBox}}>
+              <image src="{{item.img}}" mode="scaleToFill" /> 
+              <text>{{item.text}}</text>
               <view class="tj-money">
-                <label>¥ 138</label>
-                <label>¥ 155</label>
-              </view>
-            </view>
-            <view class="tj-box">
-              <image src="../../image/index/index01.jpg" mode="scaleToFill" /> 
-              <text>梦幻武当演出</text>
-              <view class="tj-money">
-                <label>¥ 138</label>
-                <label>¥ 155</label>
-              </view>
-            </view>
-            <view class="tj-box">
-              <image src="../../image/index/index01.jpg" mode="scaleToFill" /> 
-              <text>梦幻武当演出</text>
-              <view class="tj-money">
-                <label>¥ 138</label>
-                <label>¥ 155</label>
+                <label>¥ {{item.xianjia}}</label>
+                <label>¥ {{item.yuanjia}}</label>
               </view>
             </view>
         </scroll-view>
      </view>
   </view>  
   <view class="jp-banner">
-    <image src="../../images/title1.png" mode="scaleToFill" class="indexTitleImg" /> 
+    <image src="../../image/index/title1.png" mode="scaleToFill" class="indexTitleImg" /> 
     <swiper
       indicator-dots="{{indicatorDots3}}"
       autoplay="{{autoplay3}}"
@@ -120,73 +76,88 @@
 
   <view class="find-all">
      <view class="find-ul">
-       <text>门票</text>
-       <text>酒店</text>
-       <text>商品</text>
-       <text>自由行</text>
-       <text>美食</text>
+       <text class="{{sign == 1?'add-tabing':'add-tab'}}" data-num = "1" onTap='clickNav'>门票</text>
+       <text class="{{sign == 2?'add-tabing':'add-tab'}}" data-num = "2" onTap='clickNav'>酒店</text>
+       <text class="{{sign == 3?'add-tabing':'add-tab'}}" data-num = "3" onTap='clickNav'>商品</text>
+       <text class="{{sign == 4?'add-tabing':'add-tab'}}" data-num = "4" onTap='clickNav'>自由行</text>
+       <text class="{{sign == 5?'add-tabing':'add-tab'}}" data-num = "5" onTap='clickNav'>美食</text>
      </view>
      <view class="find-con">
-       <view class="find-msg">
+        <view class="find-msg {{sign == 1?'tab-show':'tab-hide'}}" a:for="{{ticket}}" data-num = "1">
           <view class="find-box">
-            <image src="../../image/index/index01.jpg" mode="scaleToFill" class="find-img">
+            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
           </view>
           <view class="find-money">
-              <text>梦幻武当演出</text>
+              <text>{{item.text}}</text>
               <label class="find-left">
-                ¥ 138
+                ¥ {{item.xianjia}}
                 <label>起/人</label>
               </label>
               <label class="find-right">
-                ¥ 155人已买
+                {{item.buy}}人已买
               </label>
           </view>   
         </view> 
-        <view class="find-msg">
+        <view class="find-msg {{sign == 2?'tab-show':'tab-hide'}}" a:for="{{hotel}}" data-num = "1">
           <view class="find-box">
-            <image src="../../image/index/index01.jpg" mode="scaleToFill" class="find-img">
+            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
           </view>
           <view class="find-money">
-              <text>梦幻武当演出</text>
+              <text>{{item.text}}</text>
               <label class="find-left">
-                ¥ 138
+                ¥ {{item.xianjia}}
                 <label>起/人</label>
               </label>
               <label class="find-right">
-                ¥ 155人已买
+                {{item.buy}}人已买
               </label>
           </view>   
         </view> 
-        <view class="find-msg">
+        <view class="find-msg {{sign == 3?'tab-show':'tab-hide'}}" a:for="{{shop}}" data-num = "1">
           <view class="find-box">
-            <image src="../../image/index/index01.jpg" mode="scaleToFill" class="find-img">
+            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
           </view>
           <view class="find-money">
-              <text>梦幻武当演出</text>
+              <text>{{item.text}}</text>
               <label class="find-left">
-                ¥ 138
+                ¥ {{item.xianjia}}
                 <label>起/人</label>
               </label>
               <label class="find-right">
-                ¥ 155人已买
+                {{item.buy}}人已买
               </label>
           </view>   
         </view> 
-        <view class="find-msg">
+        <view class="find-msg {{sign == 4?'tab-show':'tab-hide'}}" a:for="{{combo}}" data-num = "1">
           <view class="find-box">
-            <image src="../../image/index/index01.jpg" mode="scaleToFill" class="find-img">
+            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
           </view>
           <view class="find-money">
-              <text>梦幻武当演出</text>
+              <text>{{item.text}}</text>
               <label class="find-left">
-                ¥ 138
+                ¥ {{item.xianjia}}
                 <label>起/人</label>
               </label>
               <label class="find-right">
-                ¥ 155人已买
+                {{item.buy}}人已买
               </label>
           </view>   
-       </view> 
+        </view> 
+        <view class="find-msg {{sign == 5?'tab-show':'tab-hide'}}" a:for="{{food}}" data-num = "1">
+          <view class="find-box">
+            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
+          </view>
+          <view class="find-money">
+              <text>{{item.text}}</text>
+              <label class="find-left">
+                ¥ {{item.xianjia}}
+                <label>起/人</label>
+              </label>
+              <label class="find-right">
+                {{item.buy}}人已买
+              </label>
+          </view>   
+        </view> 
      </view>
   </view>
 

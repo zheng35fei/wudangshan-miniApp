@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/user/index",
-    "pages/index/index",
-    
     "pages/order/list",
     "pages/order/detail",
+
+    "pages/index/index",
+    "pages/user/index",
 
     "pages/park/list",
     "pages/park/detail",
