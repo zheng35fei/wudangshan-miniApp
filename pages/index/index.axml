@@ -19,35 +19,35 @@
   </view>
   <view class="indexNav">
     <view class="nav-item">
-      <image src="../../images/nav1.png" mode="scaleToFill" class="navImg"/>
+      <image src="../../image/index/nav1.png" mode="scaleToFill" class="navImg"/>
       <text>景区门票</text>  
     </view>
     <view class="nav-item">
-      <image src="../../images/nav2.png" mode="scaleToFill" class="navImg"/>
+      <image src="../../image/index/nav2.png" mode="scaleToFill" class="navImg"/>
       <text>酒店住宿</text>  
     </view>
     <view class="nav-item">
-      <image src="../../images/nav3.png" mode="scaleToFill" class="navImg"/>
+      <image src="../../image/index/nav3.png" mode="scaleToFill" class="navImg"/>
       <text>自由行</text>  
     </view>
     <view class="nav-item">
-      <image src="../../images/nav4.png" mode="scaleToFill" class="navImg"/>
+      <image src="../../image/index/nav4.png" mode="scaleToFill" class="navImg"/>
       <text>武当369</text>  
     </view>
     <view class="nav-item">
-      <image src="../../images/nav5.png" mode="scaleToFill" class="navImg"/>
+      <image src="../../image/index/nav5.png" mode="scaleToFill" class="navImg"/>
       <text>美食餐饮</text>  
     </view>
     <view class="nav-item">
-      <image src="../../images/nav6.png" mode="scaleToFill" class="navImg"/>
+      <image src="../../image/index/nav6.png" mode="scaleToFill" class="navImg"/>
       <text>特产商品</text>  
     </view>
     <view class="nav-item">
-      <image src="../../images/nav7.png" mode="scaleToFill" class="navImg"/>
+      <image src="../../image/index/nav7.png" mode="scaleToFill" class="navImg"/>
       <text>游记攻略</text>  
     </view>
     <view class="nav-item">
-      <image src="../../images/nav8.png" mode="scaleToFill" class="navImg"/>
+      <image src="../../image/index/nav8.png" mode="scaleToFill" class="navImg"/>
       <text>新闻资讯</text>  
     </view>
   </view> 
@@ -73,7 +73,7 @@
      <view class="jp-all">      
         <scroll-view class="scroll-view_H" scroll-x="{{true}}">
             <view class="tj-box">
-              <image src="../../images/index01.jpg" mode="scaleToFill" /> 
+              <image src="../../image/index/index01.jpg" mode="scaleToFill" /> 
               <text>梦幻武当演出</text>
               <view class="tj-money">
                 <label>¥ 138</label>
@@ -81,7 +81,7 @@
               </view>
             </view>
             <view class="tj-box">
-              <image src="../../images/index01.jpg" mode="scaleToFill" /> 
+              <image src="../../image/index/index01.jpg" mode="scaleToFill" /> 
               <text>梦幻武当演出</text>
               <view class="tj-money">
                 <label>¥ 138</label>
@@ -89,7 +89,7 @@
               </view>
             </view>
             <view class="tj-box">
-              <image src="../../images/index01.jpg" mode="scaleToFill" /> 
+              <image src="../../image/index/index01.jpg" mode="scaleToFill" /> 
               <text>梦幻武当演出</text>
               <view class="tj-money">
                 <label>¥ 138</label>
@@ -129,7 +129,7 @@
      <view class="find-con">
        <view class="find-msg">
           <view class="find-box">
-            <image src="../../images/index01.jpg" mode="scaleToFill" class="find-img">
+            <image src="../../image/index/index01.jpg" mode="scaleToFill" class="find-img">
           </view>
           <view class="find-money">
               <text>梦幻武当演出</text>
@@ -144,7 +144,7 @@
         </view> 
         <view class="find-msg">
           <view class="find-box">
-            <image src="../../images/index01.jpg" mode="scaleToFill" class="find-img">
+            <image src="../../image/index/index01.jpg" mode="scaleToFill" class="find-img">
           </view>
           <view class="find-money">
               <text>梦幻武当演出</text>
@@ -159,7 +159,7 @@
         </view> 
         <view class="find-msg">
           <view class="find-box">
-            <image src="../../images/index01.jpg" mode="scaleToFill" class="find-img">
+            <image src="../../image/index/index01.jpg" mode="scaleToFill" class="find-img">
           </view>
           <view class="find-money">
               <text>梦幻武当演出</text>
@@ -174,7 +174,7 @@
         </view> 
         <view class="find-msg">
           <view class="find-box">
-            <image src="../../images/index01.jpg" mode="scaleToFill" class="find-img">
+            <image src="../../image/index/index01.jpg" mode="scaleToFill" class="find-img">
           </view>
           <view class="find-money">
               <text>梦幻武当演出</text>
