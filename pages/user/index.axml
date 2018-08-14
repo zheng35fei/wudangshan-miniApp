@@ -1,0 +1,44 @@
+<view class="body"> 
+  <view class="userTop">
+    <view class="userName">admin</view>
+    <view class="userImg">
+      <image src="" mode="" />
+    </view>
+  </view>
+  <view class='orderTab'>
+    <view class="orderItem" a:for="{{orderTabList}}">
+      <navigator url="{{item.url}}" hover-class="className">
+        <view class="miniAppIcon {{item.icon}}" style="color:{{item.color}}"></view>
+        <view class="tabName">{{item.name}}</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="order-list">
+    <view class="item-li">
+      <navigator url="/pages/order/list" hover-class="className">
+        <text class="labelName">全部订单</text>
+        <view class="fr miniAppIcon icon-jiantou"></view>
+      </navigator>
+    </view>
+  </view>
+  
+  <view class="page-line"></view>
+
+  <view class="order-list">
+    <view class="item-li">
+      <navigator url="/pages/order/list" hover-class="className">
+        <text class="labelName">账户中心</text>
+        <view class="fr miniAppIcon icon-jiantou"></view>
+      </navigator>
+    </view>
+  </view>
+  
+  <view class="page-line"></view>
+
+  <view class="order-list">
+    <view class="item-li">
+      <text class="labelName" onTap="logout">退出登录</text>
+    </view>
+  </view>
+</view>

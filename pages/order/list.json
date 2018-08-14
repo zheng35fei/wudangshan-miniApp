@@ -1,0 +1,5 @@
+{
+    "defaultTitle": "全部订单",
+    "pullRefresh": true,
+    "allowsBounceVertical": "YES"
+}

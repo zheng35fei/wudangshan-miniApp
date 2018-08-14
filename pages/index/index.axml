@@ -1,0 +1,197 @@
+
+<view class="bannerBox">
+  <swiper
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+  > 
+    <block a:for="{{images}}" >
+      <swiper-item>
+        <image src="{{item}}" mode="scaleToFill" class="index-images"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="searchInput">
+    <view class="search-start">
+      <input type="text" placeholder="请输入酒店/门票/美食" placeholder-style="font-size:14px;color:#666">
+    </view>
+    <view  class="miniAppIcon icon-ss"></view>
+  </view>
+  <view class="indexNav">
+    <view class="nav-item">
+      <image src="../../images/nav1.png" mode="scaleToFill" class="navImg"/>
+      <text>景区门票</text>  
+    </view>
+    <view class="nav-item">
+      <image src="../../images/nav2.png" mode="scaleToFill" class="navImg"/>
+      <text>酒店住宿</text>  
+    </view>
+    <view class="nav-item">
+      <image src="../../images/nav3.png" mode="scaleToFill" class="navImg"/>
+      <text>自由行</text>  
+    </view>
+    <view class="nav-item">
+      <image src="../../images/nav4.png" mode="scaleToFill" class="navImg"/>
+      <text>武当369</text>  
+    </view>
+    <view class="nav-item">
+      <image src="../../images/nav5.png" mode="scaleToFill" class="navImg"/>
+      <text>美食餐饮</text>  
+    </view>
+    <view class="nav-item">
+      <image src="../../images/nav6.png" mode="scaleToFill" class="navImg"/>
+      <text>特产商品</text>  
+    </view>
+    <view class="nav-item">
+      <image src="../../images/nav7.png" mode="scaleToFill" class="navImg"/>
+      <text>游记攻略</text>  
+    </view>
+    <view class="nav-item">
+      <image src="../../images/nav8.png" mode="scaleToFill" class="navImg"/>
+      <text>新闻资讯</text>  
+    </view>
+  </view> 
+  <view class="top-announcement">
+    <label class="miniAppIcon icon-laba"></label>
+    <view class="top-news">
+      <swiper
+          indicator-dots="{{indicatorDots2}}"
+          autoplay="{{autoplay2}}"
+          interval="{{interval2}}"
+          vertical="{{interval2}}"
+        > 
+        <block a:for="{{text2}}" >
+          <swiper-item>
+            <text>{{item}}</text>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class="jp-tj" >
+     <image src="../../images/title1.png" mode="scaleToFill" class="indexTitleImg"/>
+     <view class="jp-all">      
+        <scroll-view class="scroll-view_H" scroll-x="{{true}}">
+            <view class="tj-box">
+              <image src="../../images/index01.jpg" mode="scaleToFill" /> 
+              <text>梦幻武当演出</text>
+              <view class="tj-money">
+                <label>¥ 138</label>
+                <label>¥ 155</label>
+              </view>
+            </view>
+            <view class="tj-box">
+              <image src="../../images/index01.jpg" mode="scaleToFill" /> 
+              <text>梦幻武当演出</text>
+              <view class="tj-money">
+                <label>¥ 138</label>
+                <label>¥ 155</label>
+              </view>
+            </view>
+            <view class="tj-box">
+              <image src="../../images/index01.jpg" mode="scaleToFill" /> 
+              <text>梦幻武当演出</text>
+              <view class="tj-money">
+                <label>¥ 138</label>
+                <label>¥ 155</label>
+              </view>
+            </view>
+        </scroll-view>
+     </view>
+  </view>  
+  <view class="jp-banner">
+    <image src="../../images/title1.png" mode="scaleToFill" class="indexTitleImg" /> 
+    <swiper
+      indicator-dots="{{indicatorDots3}}"
+      autoplay="{{autoplay3}}"
+      interval="{{interval3}}"
+      indicator-color="rgba(0,0,0,0.5)"
+      indicator-active-color="#edb211"
+    > 
+      <block a:for="{{images3}}" >
+        <swiper-item>
+          <image src="{{item.img}}" mode="scaleToFill" class="index-images"/>
+          <text >{{item.text}}</text>
+          <label>{{item.price}}</label>
+        </swiper-item>
+      </block>
+    </swiper>  
+  </view>   
+
+  <view class="find-all">
+     <view class="find-ul">
+       <text>门票</text>
+       <text>酒店</text>
+       <text>商品</text>
+       <text>自由行</text>
+       <text>美食</text>
+     </view>
+     <view class="find-con">
+       <view class="find-msg">
+          <view class="find-box">
+            <image src="../../images/index01.jpg" mode="scaleToFill" class="find-img">
+          </view>
+          <view class="find-money">
+              <text>梦幻武当演出</text>
+              <label class="find-left">
+                ¥ 138
+                <label>起/人</label>
+              </label>
+              <label class="find-right">
+                ¥ 155人已买
+              </label>
+          </view>   
+        </view> 
+        <view class="find-msg">
+          <view class="find-box">
+            <image src="../../images/index01.jpg" mode="scaleToFill" class="find-img">
+          </view>
+          <view class="find-money">
+              <text>梦幻武当演出</text>
+              <label class="find-left">
+                ¥ 138
+                <label>起/人</label>
+              </label>
+              <label class="find-right">
+                ¥ 155人已买
+              </label>
+          </view>   
+        </view> 
+        <view class="find-msg">
+          <view class="find-box">
+            <image src="../../images/index01.jpg" mode="scaleToFill" class="find-img">
+          </view>
+          <view class="find-money">
+              <text>梦幻武当演出</text>
+              <label class="find-left">
+                ¥ 138
+                <label>起/人</label>
+              </label>
+              <label class="find-right">
+                ¥ 155人已买
+              </label>
+          </view>   
+        </view> 
+        <view class="find-msg">
+          <view class="find-box">
+            <image src="../../images/index01.jpg" mode="scaleToFill" class="find-img">
+          </view>
+          <view class="find-money">
+              <text>梦幻武当演出</text>
+              <label class="find-left">
+                ¥ 138
+                <label>起/人</label>
+              </label>
+              <label class="find-right">
+                ¥ 155人已买
+              </label>
+          </view>   
+       </view> 
+     </view>
+  </view>
+
+</view>
+
+
+
+
