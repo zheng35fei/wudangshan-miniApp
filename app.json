@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/user/index",
+    "pages/park/list",
     "pages/index/index",
+    "pages/user/index",
     
     "pages/order/list",
     "pages/order/detail",
 
-    "pages/park/list",
     "pages/park/detail",
 
     "pages/hotel/list",

@@ -19,7 +19,9 @@
   </view>
   <view class="indexNav">
     <view class="nav-item">
-      <image src="../../images/nav1.png" mode="scaleToFill" class="navImg"/>
+      <navigator url="/pages/park/list">
+        <image src="../../images/nav1.png" mode="scaleToFill" class="navImg"/>
+      </navigator>
       <text>景区门票</text>  
     </view>
     <view class="nav-item">
