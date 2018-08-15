@@ -26,6 +26,26 @@
     text-align: center;
     height: 100rpx;
     line-height: 100rpx;
+    position: relative;
+}
+.a-dropdown-nav-item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 15rpx;
+    width: 1px;
+    height: 60rpx;
+    background-color: #eee;
+}
+
+.a-dropdown-nav-item .nav-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 260rpx;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .a-dropdown-nav-item-hover {

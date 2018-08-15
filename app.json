@@ -27,10 +27,8 @@
     "pages/info/list",
     "pages/info/detail",
     
- 
-
-    "pages/goods/list",
-    "pages/goods/detail"
+    "pages/shop/list",
+    "pages/shop/detail"
   ],
   "window": {
     "defaultTitle": "武当山",
