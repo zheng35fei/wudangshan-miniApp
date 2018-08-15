@@ -18,24 +18,47 @@
             <block a:for={{listData}} a:for-item="list" a:for-index="parentIndex">
                 <view hidden="{{selectedNav !== parentIndex}}">
                     <view class="a-dropdown-list-items {{active? 'show' : ''}}">
-                        <block a:for={{list.data}} >
-                            <view
-                                class="a-dropdown-list-item {{index !== (list.data.length - 1) ? '': 'last'}} {{index === list.selectedItem ? 'selected': ''}}"
-                                hover-class="a-dropdown-list-item-hover"
-                                onTap="{{list.onListItemTap || '_onListItemTap'}}"
-                                catchTap="{{list.onListItemTap || '_catchListItemTap'}}"
-                                data-index={{index}}
-                                data-parentIndex={{parentIndex}}
-                                data-title={{item.title}}
-                            >
-                                <view class="a-dropdown-list-item-line {{item.textMode ? 'a-dropdown-list-item-line-' + item.textMode : ''}}">
-                                    <image a:if={{item.thumb}} class="a-dropdown-list-item-thumb" src="{{item.thumb}}" mode="scaleToFill" />
-                                    <text class="a-dropdown-list-item-content">{{item.title}}</text>
-                                    <view a:if={{item.extra}} class="a-dropdown-list-item-extra" >{{item.extra}}</view>
-                                    <view class="a-dropdown-list-item-check"/>
-                                    <view class="a-dropdown-list-item-bottom" />
+                        <block a:if="{{list.listType === 'sort'}}"> 
+                            <block a:for={{list.data}}>
+                                <text class="a-dropdown-sort-title">{{item.title}}</text>
+                                <view class="sort-list">
+                                    <view class="sort-item {{sortIndex === item.selectedItem ? 'selected': ''}}"
+                                        a:for="{{item.sortList}}"
+                                        a:for-index="sortIndex"
+                                        a:for-item="sortItem"
+                                        data-parentIndex={{parentIndex}}
+                                        data-groupIndex={{index}}
+                                        data-index={{sortIndex}}
+                                        data-sortItem="{{sortItem}}"
+                                        catchTap="{{list.onListSortItemTap || '_catchListSortItemTap'}}"
+                                    >
+                                        {{sortItem.name}}
+                                    </view>
                                 </view>
-                            </view>
+                            </block>
+                            <view class="submit-box" data-parentIndex="{{parentIndex}}" catchTap="{{list.onListSortConfirm || '_catchListSortConfirm'}}">确认</view>
+                        </block>
+                        <block a:else> 
+                            <block a:for={{list.data}}>
+                                <view
+                                    class="a-dropdown-list-item {{index !== (list.data.length - 1) ? '': 'last'}} {{index === list.selectedItem ? 'selected': ''}}"
+                                    hover-class="a-dropdown-list-item-hover"
+                                    onTap="{{list.onListItemTap || '_onListItemTap'}}"
+                                    catchTap="{{list.onListItemTap || '_catchListItemTap'}}"
+                                    data-index={{index}}
+                                    data-parentIndex={{parentIndex}}
+                                    data-title={{item.val}}
+                                    data-filter={{item.key}}
+                                >
+                                    <view class="a-dropdown-list-item-line {{item.textMode ? 'a-dropdown-list-item-line-' + item.textMode : ''}}">
+                                        <image a:if={{item.thumb}} class="a-dropdown-list-item-thumb" src="{{item.thumb}}" mode="scaleToFill" />
+                                        <text class="a-dropdown-list-item-content">{{item.val}}</text>
+                                        <view a:if={{item.extra}} class="a-dropdown-list-item-extra" >{{item.extra}}</view>
+                                        <view class="a-dropdown-list-item-check"/>
+                                        <view class="a-dropdown-list-item-bottom" />
+                                    </view>
+                                </view>
+                            </block>
                         </block>
                     </view>
                 </view>

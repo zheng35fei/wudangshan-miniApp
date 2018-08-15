@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/park/list",
+    "pages/user/index",
     "pages/order/list",
+
     "pages/strategy/list",
     "pages/strategy/detail",
     "pages/user/center",
@@ -12,7 +15,7 @@
     "pages/order/detail",
     
 
-    "pages/park/list",
+
     "pages/park/detail",
 
     "pages/hotel/list",

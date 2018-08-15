@@ -1,8 +1,8 @@
 <import src="../components/dropdown/index.axml" />
 
 <view class="searchTop">
-  <input type="text" placeholder="搜索关键字" auto-focus />
-  <button type="default" size="mini" onTap="searchList"> 搜索 </button>
+  <input class="search-input" type="text" placeholder="搜索关键字" auto-focus />
+  <button class="search-btn" type="default" size="mini" onTap="searchList"> 搜索 </button>
 </view>
 
 <view class="filterBox">
