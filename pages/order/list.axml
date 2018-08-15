@@ -1,3 +1,4 @@
+<import src="../components/orderList/index.axml"/>
 <view>
   <view class="allOrder">
      <text class="{{order==1?'order-tabing':'order-tab'}}" data-num="1" onTap="clickOrder">全部订单</text>
@@ -6,46 +7,7 @@
      <text class="{{order==4?'order-tabing':'order-tab'}}" data-num="4" onTap="clickOrder">已完成</text>
      <text class="{{order==5?'order-tabing':'order-tab'}}" data-num="5" onTap="clickOrder">退款</text>
   </view>
-  <view class="orderTab">
-      <view class="orderOne {{order == 1?'tab-show':'tab-hide'}}"  data-num = "1">
-          <navigator url="" redirect hover-class="className">
-            <view class="allOrderCon">
-              <view class="orderList">
-                  <view class="orderBox">
-                    <text class="miniAppIcon icon-menpiao"></text>
-                    <label class="orderInfo">景区 |</label>
-                    <label class="orderStatus uppay">待支付</label>
-                    <label class="orderDate">下单日期:2018-08-14</label>
-                    <label class="orderMoney">¥ 200</label>
-                  </view>
-                  <view class="orderBoxCon">
-                      <view class="orderTitle">蹦极(武当山快乐谷旅游区)</view>   
-                      <view class="orderUse">未使用( 2018-08-14 使用)</view>
-                      <view class="orderNum">1张 <label class="miniAppIcon icon-jiantou"></label></view>
-                  </view>
-              </view>
-            </view>  
-          </navigator>
-          <navigator url="" redirect hover-class="className">
-            <view class="allOrderCon">
-              <view class="orderList">
-                  <view class="orderBox">
-                    <text class="miniAppIcon icon-menpiao"></text>
-                    <label class="orderInfo">景区 |</label>
-                    <label class="orderStatus uppay">待支付</label>
-                    <label class="orderDate">下单日期:2018-08-14</label>
-                    <label class="orderMoney">¥ 200</label>
-                  </view>
-                  <view class="orderBoxCon">
-                      <view class="orderTitle">蹦极(武当山快乐谷旅游区)</view>   
-                      <view class="orderUse">未使用( 2018-08-14 使用)</view>
-                      <view class="orderNum">1张 <label class="miniAppIcon icon-jiantou"></label></view>
-                  </view>
-              </view>
-            </view>  
-          </navigator>
-      </view>
-  </view>  
+  <template is="orderList" data="{{orderList}}"></template>
   
   
 </view>

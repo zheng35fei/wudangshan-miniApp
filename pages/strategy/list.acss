@@ -1,0 +1,23 @@
+@import '../components/strategy/index.acss';
+.searchBox{
+    border: 1px solid #eee;
+    width: 80%;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #666;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.searchBox input{
+
+}
+.searchBox .icon-ss{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    color: #edb211;
+}

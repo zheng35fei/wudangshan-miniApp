@@ -1,10 +1,16 @@
 {
   "pages": [
     "pages/order/list",
-    "pages/order/detail",
-
-    "pages/index/index",
+    "pages/strategy/list",
+    "pages/strategy/detail",
+    "pages/user/center",
     "pages/user/index",
+    "pages/user/usermsg",
+    "pages/index/index",
+
+
+    "pages/order/detail",
+    
 
     "pages/park/list",
     "pages/park/detail",
@@ -18,8 +24,7 @@
     "pages/info/list",
     "pages/info/detail",
     
-    "pages/strategy/list",
-    "pages/strategy/detail",
+ 
 
     "pages/goods/list",
     "pages/goods/detail"

@@ -1,0 +1,20 @@
+<template name="orderList">
+    <view class="orderTab" a:for="{{orderList}}">
+        <navigator url="{{item.url}}" redirect hover-class="className">
+            <view class="orderList">
+                <view class="orderBox">
+                <text class="miniAppIcon icon-menpiao"></text>
+                <label class="orderInfo">{{item.kind}} |</label>
+                <label class="orderStatus uppay">{{item.status}}</label>
+                <label class="orderDate">下单日期:{{item.data}}</label>
+                <label class="orderMoney">¥ {{item.price}}</label>
+                </view>
+                <view class="orderBoxCon">
+                    <view class="orderTitle">{{item.title}}</view>   
+                    <view class="orderUse">未使用( 2018-08-14 使用)</view>
+                    <view class="orderNum">{{item.num}}张 <label class="miniAppIcon icon-jiantou"></label></view>
+                </view>
+            </view>
+        </navigator>
+  </view>  
+</template>    

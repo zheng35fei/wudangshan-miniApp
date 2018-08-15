@@ -1,14 +1,24 @@
 Page({
   data: {
     order:1,
-    allOrder:[
+    orderList:[
       {
-        find:'景区',
+        kind:'景区',
         status:'0',
         data:'2018-08-14',
         price:'200',
         title:'蹦极（武当山快乐谷旅游区）',
-        num:'1'
+        num:'1',
+        url:'/pages/order/detail'
+      },
+      {
+        kind:'酒店',
+        status:'0',
+        data:'2018-08-14',
+        price:'300',
+        title:'酒店酒店酒店酒店',
+        num:'2',
+        url:'/pages/order/detail'
       }
     ]
 

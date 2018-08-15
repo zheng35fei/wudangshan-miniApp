@@ -1,0 +1,19 @@
+<template name="strategy">
+   <view class="strategyBox" a:for="{{strategy}}">
+       <navigator url="" redirect hover-class="className">
+            <view class="strategyImg">
+                <image src="{{item.img}}" mode="scaleToFill" class="imgcon"/>
+            </view>
+            <view class="strategyLeft">
+                <view class="strategyTitle">{{item.title}}</view>
+                <view class="strategyMsg">
+                    <label class="strategyDate">{{item.data}}</label>
+                    <label class="strategyEyes">
+                        <text class="miniAppIcon icon-uniE2"></text>
+                        {{item.num}}
+                    </label>
+                </view>
+            </view>     
+       </navigator>
+   </view>
+</template>    
