@@ -1,10 +1,11 @@
 <view>
+    <form onSubmit="formSubmit" >
+        <view>用户名：</view>
+        <input type="text" name="loginName" placeholder="请输入用户名" auto-focus  />
+        <view>密码：</view>
+        <input type="text" name="loginPass" placeholder="请输入密码" auto-focus  />
 
-    <view>用户名：</view>
-    <input type="text" placeholder="请输入用户名" auto-focus password />
-    <view>密码：</view>
-    <input type="text" placeholder="请输入密码" auto-focus password />
 
-
-    <button type="default" size="defaultSize" onTap="loginBtn">提交</button>
+        <button type="primary" size="mini" formType="submit">提交</button>
+    </form>    
 </view>

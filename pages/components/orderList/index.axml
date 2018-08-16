@@ -1,20 +1,25 @@
+<import src="../orderStatus/orderStatus.axml"/>
+<import src="../orderType/orderType.axml"/>
 <template name="orderList">
-    <view class="orderTab" a:for="{{orderList}}">
-        <navigator url="{{item.url}}" redirect hover-class="className">
+    
+    <view class="orderTab" a:for="{{rows}}">
+        <navigator url="/pages/order/detail?orderNo={{item.orderNo}}&buyerId={{item.buyerId}}" redirect hover-class="className">
             <view class="orderList">
                 <view class="orderBox">
                 <text class="miniAppIcon icon-menpiao"></text>
-                <label class="orderInfo">{{item.kind}} |</label>
-                <label class="orderStatus uppay">{{item.status}}</label>
-                <label class="orderDate">下单日期:{{item.data}}</label>
+                <template is="orderType" data="{{item}}"></template>
+                <template is="orderStatus" data="{{orderStatus:item.orderStatus}}"></template>
+                <label class="orderDate">下单日期:{{item.createTime.substring(0, 10)}}</label>
                 <label class="orderMoney">¥ {{item.price}}</label>
                 </view>
                 <view class="orderBoxCon">
-                    <view class="orderTitle">{{item.title}}</view>   
+                    <view class="orderTitle">{{item.orderInfo}}</view>   
                     <view class="orderUse">未使用( 2018-08-14 使用)</view>
-                    <view class="orderNum">{{item.num}}张 <label class="miniAppIcon icon-jiantou"></label></view>
+                    <view class="orderNum">{{item.amount}}张 <label class="miniAppIcon icon-jiantou"></label></view>
                 </view>
             </view>
         </navigator>
-  </view>  
+    </view>  
+        
+    
 </template>    

@@ -1,15 +1,27 @@
+import api from '/util/api.js';
+let app = getApp();
 Page({
   data: {
-    orderNo:'180814000435',
-    orderDate:'2018-08-14 14:46:51',
-    price:'200',
-    status:'待支付',
-    useDate:'2018-08-14',
-    buyNum:'1',
-    phone:'18273263790',
-    xiadanDate:'2018-08-11 14:46:51',
-    name:'杨小姐',
-    title:'蹦极蹦极'
+ 
   },
-  onLoad() {},
+  async onLoad(e) {
+    console.log("e",e);
+    
+    let buyerId=e.buyerId;
+    let orderNo=e.orderNo;
+    let storage= my.getStorageSync({
+      key: 'loginInfo', // 缓存数据的key
+    }); 
+    let token=storage.data.token;
+    let res = await app.httpRequest({
+      url:app.config.apiHost+api.member.order.detail,  
+      data:{leaguerId:buyerId,orderNo: orderNo},
+      headers:{'access-token':token} 
+    });
+
+    this.setData({
+      ...res.data,
+    })
+    console.log("data",res.data);
+  },
 });

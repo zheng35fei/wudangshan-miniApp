@@ -2,39 +2,40 @@
  
 }
 .miniAppIcon{
-    font-size: 12px;
-       margin-right: 5px;
+    font-size: 30rpx;
+       margin-right: 10rpx;
 }
 .detail-con{
    background: #ffffff;
-   padding: 10px;
-   font-size: 16px;
+   padding: 20rpx;
+   font-size: 35rpx;
    color: #666;
    border-bottom: 1px solid #eee;
 }
 .detail-title{
-  margin-bottom: 5px;
+  margin-bottom: 10rpx;
 }
 .detail-msg{
   overflow: hidden;
 }
 .detail-date{
-   font-size: 14px;float: left;
+   font-size: 30rpx;
+   float: left;
 }
 .detail-date label{
    display: inline-block;
 }
 .detail-eyes{
    float: right;
-   font-size: 14px;
+   font-size: 30rpx;
 
 }
 .detail-eyes label{
 
 }
 .detail-content{
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 20rpx;
+    padding: 20rpx;
 }
 
 

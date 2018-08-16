@@ -50,7 +50,7 @@ Page({
          },
          {
            img:'../../image/index/nav8.png',
-           url:'/pages/park/list',
+           url:'/pages/strategy/list',
            text:'新闻资讯'
          }
     ],

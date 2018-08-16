@@ -1,34 +1,35 @@
+import api from '/util/api.js';
+let app = getApp();
 Page({
   data: {
-    order:1,
-    orderList:[
-      {
-        kind:'景区',
-        status:'0',
-        data:'2018-08-14',
-        price:'200',
-        title:'蹦极（武当山快乐谷旅游区）',
-        num:'1',
-        url:'/pages/order/detail'
-      },
-      {
-        kind:'酒店',
-        status:'0',
-        data:'2018-08-14',
-        price:'300',
-        title:'酒店酒店酒店酒店',
-        num:'2',
-        url:'/pages/order/detail'
-      }
-    ]
-
+    orderStatus:5,
+  },
+  async clickOrder(e){
+    
+    let orderStatus=e.target.dataset.num;  
+    this.getListData(orderStatus);
 
   },
-  clickOrder(event){
-    console.log(event)
-    this.setData({
-      order: event.target.dataset.num
+  async getListData(orderStatus){
+    let that = this;
+      
+    let storage= my.getStorageSync({
+      key: 'loginInfo', // 缓存数据的key
+    }); 
+    let token=storage.data.token;
+    let buyerId=storage.data.leaguerId;
+    let res = await app.httpRequest({
+      url:app.config.apiHost+api.member.order.pagelist,  
+      data:{buyerId:buyerId,currPage:1,pageSize:6, orderStatus: orderStatus},
+      headers:{'access-token':token} 
+    });
+
+    that.setData({
+      ...res.data,
+      orderStatus:orderStatus
     })
   },
-
+  async onLoad(){
+    this.getListData();
+  } 
 });

@@ -33,11 +33,11 @@
           autoplay="{{autoplay2}}"
           interval="{{interval2}}"
           vertical="{{vertical2}}"
-          style="height: 18px;"
+          style="height: 70rpx;"
         > 
-        <block a:for="{{news}}" style="height: 16px;" >
-          <swiper-item >
-            <text>{{item.title}}</text>
+        <block a:for="{{news}}" style="height: 70rpx;" >
+          <swiper-item style="height: 70rpx;" >
+            <text style="height: 70rpx;" >{{item.title}}</text>
           </swiper-item>
         </block>
       </swiper>

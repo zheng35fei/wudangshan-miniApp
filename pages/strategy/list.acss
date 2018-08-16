@@ -4,20 +4,17 @@
     width: 80%;
     text-align: center;
     background: #fff;
-    border-radius: 4px;
+    border-radius: 20rpx;
     margin: 0 auto;
-    font-size: 12px;
+    font-size: 20rpx;
     color: #666;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
     position: relative;
-}
-.searchBox input{
-
 }
 .searchBox .icon-ss{
     position: absolute;
-    right: 6px;
-    top: 6px;
+    right: 12rpx;
+    top: 12rpx;
     color: #edb211;
 }

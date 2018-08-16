@@ -3,52 +3,52 @@
 }
 .orderBox{
     border-bottom: 1px solid #eee;
-    padding-bottom: 6px;
+    padding-bottom: 20rpx;
     color: #666;
 }
 .orderBox .miniAppIcon{
-    margin-right: 5px;
-    font-size: 14px;
+    margin-right: 10rpx;
+    font-size: 30rpx;
 }
 .orderBox .orderInfo{
    color: #666;
-   font-size: 12px;
+   font-size: 30rpx;
 }
 .orderBox .orderStatus.uppay{
     color: #c33;
-    font-size: 12px;
-    margin-left: 3px;
-    margin-right: 3px;
+    font-size: 30rpx;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
 }
 .orderBox .orderDate{
     color: #666;
-    font-size: 12px;
+    font-size: 30rpx;
 }
 .orderBox .orderMoney{
     color: #f00;
     float: right;
-    font-size: 12px;
+    font-size: 30rpx;
 }
 .orderBoxCon{
-    padding-top: 8px;
+    padding-top: 20rpx;
 }
 .orderBoxCon .orderTitle{
    color: #333;
-   font-size: 14px;
-   margin-bottom: 2px;
+   font-size: 30rpx;
+   margin-bottom: 20rpx;
 }
 .orderBoxCon .orderUse{
     color: #666;
-    font-size: 12px;
-    margin: 7px 0;
+    font-size: 30rpx;
+    margin: 15rpx 0;
 }
 .orderBoxCon .orderNum{
    color: #666;
-   font-size: 12px;
+   font-size: 30rpx;
 }
 .orderBoxCon .icon-jiantou{
     line-height: 1;
-    font-size: 12px;
+    font-size: 30rpx;
     float: right;
 }
 .allOrder .order-tabing{

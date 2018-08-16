@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/user/login", 
     "pages/index/index",
+    "pages/strategy/detail",
+    "pages/order/list",
+    "pages/user/login", 
+    "pages/order/detail",
     "pages/park/list",
 
-    "pages/order/detail",
     "pages/strategy/list",
-    "pages/strategy/detail",
     
 
     "pages/park/detail",
@@ -15,12 +16,6 @@
     "pages/user/center",
     "pages/user/index", 
     "pages/user/usermsg",
-
-
-
-    "pages/order/list",
-
-  
 
     "pages/hotel/list",
     "pages/hotel/detail",
