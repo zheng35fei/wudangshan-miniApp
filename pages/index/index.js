@@ -26,32 +26,32 @@ Page({
          {
            img:'../../image/index/nav3.png',
            url:'/pages/park/list',
-           text:'自由行'
+           text:'刷脸入园'
          },
          {
            img:'../../image/index/nav4.png',
            url:'/pages/park/list',
-           text:'武当山369'
+           text:'导游导览'
          },
          {
            img:'../../image/index/nav5.png',
            url:'/pages/park/list',
-           text:'美食餐饮'
+           text:'游记攻略'
          },
          {
            img:'../../image/index/nav6.png',
            url:'/pages/park/list',
-           text:'特产商品'
+           text:'信用免押'
          },
          {
            img:'../../image/index/nav7.png',
            url:'/pages/park/list',
-           text:'游记攻略'
+           text:'特产商品'
          },
          {
            img:'../../image/index/nav8.png',
            url:'/pages/strategy/list',
-           text:'新闻资讯'
+           text:'信息资讯'
          }
     ],
     tjBox:[
