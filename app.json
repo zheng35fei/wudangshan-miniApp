@@ -1,14 +1,14 @@
 {
   "pages": [
-
     "pages/user/login", 
     "pages/index/index",
+    "pages/park/list",
+
     "pages/order/detail",
     "pages/strategy/list",
     "pages/strategy/detail",
     
 
-    "pages/park/list",
     "pages/park/detail",
 
     "pages/user/index",
@@ -28,14 +28,8 @@
     "pages/guide/detail",
     "pages/info/list",
     "pages/info/detail",
-<<<<<<< HEAD
-    "pages/goods/list",
-    "pages/goods/detail"
-=======
-    
     "pages/shop/list",
     "pages/shop/detail"
->>>>>>> 1faa7fe1ced1319a1fc63b85650cebeb31464fd1
   ],
   "window": {
     "defaultTitle": "武当山",
