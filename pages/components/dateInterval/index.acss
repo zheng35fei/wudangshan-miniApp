@@ -1,0 +1,28 @@
+.dateIntervalWrap {
+    display: flex;
+    align-items:center;
+    padding: 10rpx 30rpx;
+    background-color: #fff;
+}
+.dateTitle {
+    flex: 1;
+    color: #333;
+    font-size: 26rpx;
+    text-align: center;
+}
+.dateInputBox {
+    flex: 3;
+    position: relative;
+}
+.dateInputBox .icon-date {
+    position: absolute;
+    z-index: 2;
+    right: 10rpx;
+    top: 12rpx;
+    color: #1fc0a3;
+}
+.dateInputBox input {
+    border: 1px solid #eee;
+    color: #333;
+    font-size: 24rpx;
+}

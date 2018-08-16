@@ -1,7 +1,6 @@
 export default {
   _onNavItemTap(e) {
     const index = e.currentTarget.dataset.index;
-    console.log(e, index)
     if (this.onDropdownNavItemTap) {
       this.onDropdownNavItemTap(e, index);
     } else {

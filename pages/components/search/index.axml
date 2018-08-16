@@ -1,0 +1,8 @@
+<template name="Search">
+  <view class="searchWrap">
+    <form onSubmit="{{parentSearchFunc || '_searchFunc'}}" onReset="_clearSearchName">
+      <input class="search-input" name="searchName" type="text" value="{{searchName || ''}}" onConfirm="{{parentSearchFunc || '_searchFunc'}}" placeholder="搜索关键字" auto-focus />
+      <button class="search-btn miniAppIcon icon-sousuo" formType="submit"> </button>
+    </form>
+  </view>
+</template>

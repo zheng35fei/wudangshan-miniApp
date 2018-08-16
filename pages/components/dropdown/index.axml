@@ -8,7 +8,7 @@
                     onTap="_onNavItemTap"
                     data-index={{index}}
                 >
-                    <text>{{item.nav}}</text>
+                    <text class="nav-title">{{item.nav}}</text>
                     <view class="triangle"></view>
                 </view>
             </block>

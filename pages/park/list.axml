@@ -1,10 +1,23 @@
 <import src="../components/dropdown/index.axml" />
+<import src="../components/moduleList/index.axml" />
+<import src="../components/search/index.axml" />
+<import src="../components/dateInterval/index.axml" />
 
 <view class="searchTop">
-  <input class="search-input" type="text" placeholder="搜索关键字" auto-focus />
-  <button class="search-btn" type="default" size="mini" onTap="searchList"> 搜索 </button>
+  <template is="Search" data="{{...searchData}}"></template>
+</view>
+
+<view style="margin-bottom:10rpx;">
+  <template is="DateInterval" data="{{showType: 'input', ...dateOption}}"></template>
 </view>
 
 <view class="filterBox">
   <template is="DropdownSelect" data={{...dropdownSelectData}}></template>
 </view>
+
+<view class="page-line"></view>
+
+<view class="listBox">
+  <template is="ModuleList" data={{...moduleListData}}></template>
+</view>
+

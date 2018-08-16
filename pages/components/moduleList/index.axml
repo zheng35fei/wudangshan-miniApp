@@ -1,0 +1,73 @@
+<template name="ModuleList">
+  <view class="moduleList">
+    <!-- park -->
+    <block a:if="{{module === 'park'}}">
+      {{module}}
+      <view class="list-item" a:for="{{rows}}">
+        <view class="item-pic">
+          <image src="{{item.linkMobileImg}}" mode="aspectFill" />
+        </view>
+        <view class="item-info">
+          <text class="item-title">{{item.name}}</text>
+          <view class="item-labels">
+            <text class="item-label" a:for="{{item.labelsName.split(',')}}" a:for-item="labelItem">{{labelItem}}</text>
+          </view>
+          <view class="item-tip-p">{{item.anotherName}}</view>
+          <view class="item-info-sold-price">
+            <view class="item-sold-box">
+              <text class="soldNum">{{item.salesNum}}</text>人已购买
+            </view>
+            <view class="item-price-box">
+              ¥<text class="priceNum">{{item.priceShow}}</text>起
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    
+    <!-- hotel -->
+    <block a:elif="{{module === 'hotel'}}">
+      {{module}}
+      <view class="list-item" a:for="{{rows}}">
+        <view class="item-pic">
+          <image src="{{item.linkMobileImg}}" mode="aspectFill" />
+        </view>
+        <view class="item-info">
+          <text class="item-title">{{item.name}}</text>
+          <view class="item-tip-p">
+            <text class="miniAppIcon icon-location"></text>
+            {{item.addr}}
+          </view>
+          <view class="item-info-sold-price">
+            <view class="item-price-box">
+              ¥<text class="priceNum">{{item.priceShow}}</text>起
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <!-- shop -->
+    <block a:elif="{{module === 'shop'}}">
+      {{module}}
+      <view class="list-item" a:for="{{rows}}">
+        <view class="item-pic">
+          <image src="{{item.linkMobileImg}}" mode="aspectFill" />
+        </view>
+        <view class="item-info">
+          <text class="item-title">{{item.name}}</text>
+          <view class="item-tip-p">
+            <text class="miniAppIcon icon-location"></text>
+            {{item.addr}}
+          </view>
+          <view class="item-info-sold-price">
+            <view class="item-price-box">
+              ¥<text class="priceNum">{{item.priceShow}}</text>起
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+  </view>
+</template>
