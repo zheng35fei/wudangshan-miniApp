@@ -1,3 +1,7 @@
+<import src="../components/strategy/detail.axml"/>
+
 <view>
-  New Page
+
+   <template is="strategyDetail" data="{{...detail}}"></template>
+
 </view>

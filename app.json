@@ -1,34 +1,33 @@
 {
   "pages": [
-    "pages/park/list",
-    "pages/user/index",
-    "pages/order/list",
 
+    "pages/user/login", 
+    "pages/index/index",
+    "pages/order/detail",
     "pages/strategy/list",
     "pages/strategy/detail",
-    "pages/user/center",
-    "pages/user/index",
-    "pages/user/usermsg",
-    "pages/index/index",
-
-
-    "pages/order/detail",
     
 
-
+    "pages/park/list",
     "pages/park/detail",
+
+    "pages/user/index",
+    "pages/user/center",
+    "pages/user/index", 
+    "pages/user/usermsg",
+
+
+
+    "pages/order/list",
+
+  
 
     "pages/hotel/list",
     "pages/hotel/detail",
-    
     "pages/guide/list",
     "pages/guide/detail",
-    
     "pages/info/list",
     "pages/info/detail",
-    
- 
-
     "pages/goods/list",
     "pages/goods/detail"
   ],

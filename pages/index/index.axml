@@ -5,9 +5,9 @@
     autoplay="{{autoplay}}"
     interval="{{interval}}"
   > 
-    <block a:for="{{images}}" >
+    <block a:for="{{head_carousel}}" >
       <swiper-item>
-        <image src="{{item}}" mode="scaleToFill" class="index-images"/>
+        <image src="{{item.mig}}" mode="scaleToFill" class="index-images"/>
       </swiper-item>
     </block>
   </swiper>
@@ -32,11 +32,12 @@
           indicator-dots="{{indicatorDots2}}"
           autoplay="{{autoplay2}}"
           interval="{{interval2}}"
-          vertical="{{interval2}}"
+          vertical="{{vertical2}}"
+          style="height: 18px;"
         > 
-        <block a:for="{{text2}}" >
-          <swiper-item>
-            <text>{{item}}</text>
+        <block a:for="{{news}}" style="height: 16px;" >
+          <swiper-item >
+            <text>{{item.title}}</text>
           </swiper-item>
         </block>
       </swiper>
@@ -46,12 +47,12 @@
      <image src="../../image/index/title1.png" mode="scaleToFill" class="indexTitleImg"/>
      <view class="jp-all">      
         <scroll-view class="scroll-view_H" scroll-x="{{true}}">
-            <view class="tj-box" a:for={{tjBox}}>
-              <image src="{{item.img}}" mode="scaleToFill" /> 
-              <text>{{item.text}}</text>
+            <view class="tj-box" a:for={{boutique_recommand}}>
+              <image src="{{item.mig}}" mode="scaleToFill" /> 
+              <text>{{item.name}}</text>
               <view class="tj-money">
-                <label>¥ {{item.xianjia}}</label>
-                <label>¥ {{item.yuanjia}}</label>
+                <label>¥ {{item.price}}</label>
+                <label>¥ {{item.beforePrice}}</label>
               </view>
             </view>
         </scroll-view>
@@ -65,11 +66,12 @@
       interval="{{interval3}}"
       indicator-color="rgba(0,0,0,0.5)"
       indicator-active-color="#edb211"
+      style="height: 190px;width:100%;"
     > 
-      <block a:for="{{images3}}" >
+      <block a:for="{{popular_head}}" >
         <swiper-item>
-          <image src="{{item.img}}" mode="scaleToFill" class="index-images"/>
-          <text >{{item.text}}</text>
+          <image src="{{item.mig}}" mode="scaleToFill" class="index-images"/>
+          <text >{{item.name}}</text>
           <label>{{item.price}}</label>
         </swiper-item>
       </block>
@@ -85,80 +87,92 @@
        <text class="{{sign == 5?'add-tabing':'add-tab'}}" data-num = "5" onTap='clickNav'>美食</text>
      </view>
      <view class="find-con">
-        <view class="find-msg {{sign == 1?'tab-show':'tab-hide'}}" a:for="{{ticket}}" data-num = "1">
-          <view class="find-box">
-            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
-          </view>
-          <view class="find-money">
-              <text>{{item.text}}</text>
-              <label class="find-left">
-                ¥ {{item.xianjia}}
-                <label>起/人</label>
-              </label>
-              <label class="find-right">
-                {{item.buy}}人已买
-              </label>
-          </view>   
+        <view class="find-msg {{sign == 1?'tab-show':'tab-hide'}}" a:for="{{popular_ticket}}" data-num = "1">
+          <navigator url="{{item.url}}" redirect hover-class="className">
+              <view class="find-box">
+                <image src="{{item.mig}}" mode="scaleToFill" class="find-img">
+              </view>
+              <view class="find-money">
+                  <text>{{item.title}}</text>
+                  <label class="find-left">
+                    ¥ {{item.price}}
+                    <label>起/人</label>
+                  </label>
+                  <label class="find-right">
+                    {{item.sale_num}}人已买
+                  </label>
+              </view>   
+          </navigator>
         </view> 
-        <view class="find-msg {{sign == 2?'tab-show':'tab-hide'}}" a:for="{{hotel}}" data-num = "1">
-          <view class="find-box">
-            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
-          </view>
-          <view class="find-money">
-              <text>{{item.text}}</text>
-              <label class="find-left">
-                ¥ {{item.xianjia}}
-                <label>起/人</label>
-              </label>
-              <label class="find-right">
-                {{item.buy}}人已买
-              </label>
-          </view>   
+        <view class="find-msg {{sign == 2?'tab-show':'tab-hide'}}" a:for="{{popular_hotel}}" data-num = "1">
+          <navigator url="{{item.url}}" redirect hover-class="className">
+              <view class="find-box">
+                <image src="{{item.mig}}" mode="scaleToFill" class="find-img">
+              </view>
+              <view class="find-money">
+                  <text>{{item.title}}</text>
+                  <label class="find-left">
+                    ¥ {{item.price}}
+                    <label>起/人</label>
+                  </label>
+                  <label class="find-right">
+                    {{item.sale_num}}人已买
+                  </label>
+              </view>
+          </navigator>            
         </view> 
-        <view class="find-msg {{sign == 3?'tab-show':'tab-hide'}}" a:for="{{shop}}" data-num = "1">
-          <view class="find-box">
-            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
-          </view>
-          <view class="find-money">
-              <text>{{item.text}}</text>
-              <label class="find-left">
-                ¥ {{item.xianjia}}
-                <label>起/人</label>
-              </label>
-              <label class="find-right">
-                {{item.buy}}人已买
-              </label>
-          </view>   
+        <view class="find-msg {{sign == 3?'tab-show':'tab-hide'}}" a:for="{{popular_goods}}" data-num = "1">
+           <navigator url="{{item.url}}" redirect hover-class="className">
+              <view class="find-box">
+                <image src="{{item.mig}}" mode="scaleToFill" class="find-img">
+              </view>
+              <view class="find-money">
+                  <text>{{item.title}}</text>
+                  <label class="find-left">
+                    ¥ {{item.price}}
+                    <label>起/人</label>
+                  </label>
+                  <label class="find-right">
+                    {{item.sale_num}}人已买
+                  </label>
+              </view>  
+           </navigator>
         </view> 
-        <view class="find-msg {{sign == 4?'tab-show':'tab-hide'}}" a:for="{{combo}}" data-num = "1">
-          <view class="find-box">
-            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
-          </view>
-          <view class="find-money">
-              <text>{{item.text}}</text>
-              <label class="find-left">
-                ¥ {{item.xianjia}}
-                <label>起/人</label>
-              </label>
-              <label class="find-right">
-                {{item.buy}}人已买
-              </label>
-          </view>   
+        <view class="find-msg {{sign == 4?'tab-show':'tab-hide'}}" a:for="{{popular_zyx}}" data-num = "1">
+          <navigator url="{{item.url}}" redirect hover-class="className">
+              <view class="find-box">
+                <image src="{{item.img}}" mode="scaleToFill" class="find-img">
+              </view>
+              <view class="find-money">
+                  <text>{{item.title}}</text>
+                  <label class="find-left">
+                    ¥ {{item.price}}
+                    <label>起/人</label>
+                  </label>
+                  <label class="find-right">
+                    {{item.sale_num}}人已买
+                  </label>
+              </view> 
+          </navigator>
+          
         </view> 
-        <view class="find-msg {{sign == 5?'tab-show':'tab-hide'}}" a:for="{{food}}" data-num = "1">
-          <view class="find-box">
-            <image src="{{item.img}}" mode="scaleToFill" class="find-img">
-          </view>
-          <view class="find-money">
-              <text>{{item.text}}</text>
-              <label class="find-left">
-                ¥ {{item.xianjia}}
-                <label>起/人</label>
-              </label>
-              <label class="find-right">
-                {{item.buy}}人已买
-              </label>
-          </view>   
+        <view class="find-msg {{sign == 5?'tab-show':'tab-hide'}}" a:for="{{popular_food}}" data-num = "1">
+          <navigator url="{{item.url}}" redirect hover-class="className">
+              <view class="find-box">
+                <image src="{{item.mig}}" mode="scaleToFill" class="find-img">
+              </view>
+              <view class="find-money">
+                  <text>{{item.title}}</text>
+                  <label class="find-left">
+                    ¥ {{item.price}}
+                    <label>起/人</label>
+                  </label>
+                  <label class="find-right">
+                    {{item.sale_num}}人已买
+                  </label>
+              </view>   
+          </navigator>
+         
         </view> 
      </view>
   </view>

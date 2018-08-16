@@ -1,0 +1,10 @@
+<view>
+
+    <view>用户名：</view>
+    <input type="text" placeholder="请输入用户名" auto-focus password />
+    <view>密码：</view>
+    <input type="text" placeholder="请输入密码" auto-focus password />
+
+
+    <button type="default" size="defaultSize" onTap="loginBtn">提交</button>
+</view>

@@ -1,0 +1,47 @@
+.detail{
+ 
+}
+.miniAppIcon{
+    font-size: 12px;
+       margin-right: 5px;
+}
+.detail-con{
+   background: #ffffff;
+   padding: 10px;
+   font-size: 16px;
+   color: #666;
+   border-bottom: 1px solid #eee;
+}
+.detail-title{
+  margin-bottom: 5px;
+}
+.detail-msg{
+  overflow: hidden;
+}
+.detail-date{
+   font-size: 14px;float: left;
+}
+.detail-date label{
+   display: inline-block;
+}
+.detail-eyes{
+   float: right;
+   font-size: 14px;
+
+}
+.detail-eyes label{
+
+}
+.detail-content{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+

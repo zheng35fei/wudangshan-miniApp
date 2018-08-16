@@ -105,13 +105,14 @@ html,body{
    margin-right: 5px
 }
 .top-announcement .top-news{
-  width: 88%;
-  display: inline-block; 
-  white-space: nowrap;
-  overflow: hidden; 
-  text-overflow:ellipsis;
-  margin-left: 10px;
-  vertical-align: middle;
+    width: 88%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    vertical-align: middle;
+    height: 18px;
 }
 
 .jp-tj{
@@ -212,6 +213,9 @@ html,body{
     color: #fff;
     font-size: 14px;
 }
+.jp-banner  swiper{
+    height: 190px;
+}
 .find-all{
     background: #fff;
     padding:0 10px;
@@ -280,6 +284,8 @@ html,body{
 .find-all .find-ul .add-tab{color: #000;}
 
 
-
+.bannerBox .a-swiper-indicator{
+    bottom: 16px;
+}
 
 
