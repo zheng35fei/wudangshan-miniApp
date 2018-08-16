@@ -84,3 +84,78 @@ page {
   font-size: 24rpx;
   color:#666;
 }
+
+.list-item-line {
+  display: flex;
+  position: relative;
+  padding: 30rpx;
+  background-color: #fff;
+  align-items:center;
+}
+.list-item-line::after {
+  position: absolute;
+  content:'';
+  border-bottom: 1px solid #eee;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.list-item-line .list-item-title {
+  flex-basis: 20%;
+  flex: 1;
+  font-size: 28rpx;
+  color:#555;
+}
+.list-item-line .list-item-content {
+  flex: 1;
+  flex-basis: 40%;
+  font-size: 28rpx;
+  color:#333;
+  padding: 0 15rpx;
+}
+.list-item-line .list-item-extra {
+  font-size: 24rpx;
+  text-align: right;
+  color:#888;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width:auto;
+  white-space: nowrap;
+}
+.list-item-line .icon-jiantou {
+  font-size: 22rpx;
+  height: 22rpx;
+  line-height: 22rpx;
+  margin-top: 7.5rpx;
+  display: block;
+  margin-left: 10rpx;
+}
+
+.title-line {
+  padding: 25rpx 30rpx;
+}
+
+.item-labels {
+    height: 40rpx;
+    overflow: hidden;
+}
+.item-labels .item-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8rpx;
+    color: #f90;
+    padding: 3rpx 10rpx;
+    border-radius: 3px;
+    border:1px solid #f90;
+    font-size: 21rpx;
+  }
+  
+  .price-box {
+    font-size: 26rpx;
+    color: #888;
+  }
+  .price-box .priceNum {
+    color: #f66;
+    font-size: 32rpx;
+    padding: 0 5rpx;
+  }

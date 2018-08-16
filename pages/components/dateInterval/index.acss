@@ -23,6 +23,6 @@
 }
 .dateInputBox input {
     border: 1px solid #eee;
-    color: #333;
-    font-size: 24rpx;
+    color: #555;
+    font-size: 28rpx;
 }

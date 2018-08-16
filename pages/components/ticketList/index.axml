@@ -1,0 +1,7 @@
+<template name="TicketList">
+  <view class="ticketListWrap">
+    <view>
+      
+    </view>
+  </view>
+</template>

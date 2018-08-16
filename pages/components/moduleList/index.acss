@@ -13,7 +13,6 @@
 .item-pic {
     flex: 1;
     overflow: hidden;
-    background-color: red;
     height: 160rpx;
 }
 .item-pic image {
@@ -37,23 +36,12 @@
     overflow: hidden;
 }
 
-.item-labels {
-    height: 40rpx;
-    overflow: hidden;
-}
-.item-labels .item-label {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8rpx;
-    color: #f90;
-    padding: 3rpx 10rpx;
-    border-radius: 3px;
-    border:1px solid #f90;
-    font-size: 21rpx;
-}
 .item-tip-p {
-    height: 36rpx;
-    line-height: 36rpx;
+    max-height: 48rpx;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    display: -webkit-box;
+    overflow: hidden;
     padding: 5rpx 0;
     color: #999;
     font-size: 24rpx;
@@ -81,4 +69,118 @@
     color: #f66;  
     font-size: 32rpx;
     padding: 0 5rpx;
+}
+
+.list-shop-wrap, .list-strategy-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+.list-item-shop {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.list-item-shop .item-pic {
+    height: 340rpx;
+    flex: 2.4;
+}
+.list-item-shop .item-info {
+    padding: 10rpx 5rpx 0;
+    flex: 1;
+}
+.list-item-shop .item-info-sold-price {
+    align-items: center;
+}
+.list-item-shop .item-price-box {
+    text-align: left;
+    order:0;
+}
+.list-item-shop .item-sold-box {
+    text-align: right;
+    order:1;
+}
+.list-item-shop .item-sold-box .soldNum {
+    color: #999;
+    font-size: 26rpx;
+}
+
+.list-item-strategy {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-bottom: 10rpx;
+}
+.list-item-strategy .item-pic {
+    height: 340rpx;
+    flex: 2.6;
+}
+.list-item-strategy .item-info {
+    flex: 1;
+    padding: 10rpx 20rpx;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.list-item-strategy .item-title {
+    flex: 1;
+    width: 100%;
+    font-size: 36rpx;
+    height: 24rpx;
+    line-height: 1.4;
+    padding: 8rpx 0;
+}
+.list-item-strategy .item-sold-box .miniAppIcon, 
+.list-item-strategy .item-price-box .miniAppIcon,
+.list-item-news .item-price-box .miniAppIcon {
+    font-size: 28rpx;
+    color:#999;
+    margin-right: 10rpx;
+}
+.list-item-strategy .priceNum, 
+.list-item-news .priceNum, 
+.list-item-strategy .soldNum,
+.list-item-news .soldNum {
+    color:#999;
+    font-size: 28rpx;
+}
+
+
+.list-item-news .item-pic {
+    height: 150rpx;
+    flex: 1;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.list-item-news .item-info {
+    flex: 2.2;
+    padding: 10rpx 0 10rpx 20rpx;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.list-item-news .item-title {
+    flex: 1;
+    width: auto;
+    height: 40rpx;
+    line-height: 1.4;
+    margin-bottom: 10rpx;
+    color:#333;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 30rpx;
+    white-space: initial;
+    text-overflow: initial;
+}
+.list-item-news .item-sold-box .miniAppIcon {
+    display: none;
+}
+.list-item-news .item-price-box .miniAppIcon {
+    font-size: 22rpx;
+}
+.list-item-news .item-sold-box {
+    flex: 2;
 }
