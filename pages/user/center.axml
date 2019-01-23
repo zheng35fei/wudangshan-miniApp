@@ -1,0 +1,39 @@
+<view>
+    <view class="textCon">
+        <view>
+          <navigator url="/pages/user/usermsg" redirect hover-class="className">
+            <text>姓名</text>
+            <label class="textLabel">有意义<label class="miniAppIcon icon-jiantou"></label></label>
+          </navigator>
+        </view>
+        <view>
+            <picker onChange="bindSex" value="{{index}}" range="{{sex}}">
+              <view>
+                <text>性别</text>
+                <view class="sex-choose">{{sex[index]}}<label class="miniAppIcon icon-jiantou "></label></view>
+              </view>
+            </picker>
+        </view>
+      </view>
+      <view class="textCon">
+        <view>
+          <navigator url="/pages/user/usermsg" redirect hover-class="className">
+              <text>身份证</text>
+              <label class="textLabel">43028119950510202X<label class="miniAppIcon icon-jiantou"></label></label>
+          </navigator>
+        </view>
+        <view>
+          <navigator url="/pages/user/usermsg" redirect hover-class="className">
+              <text>手机号</text>
+              <label class="textLabel">18273263790<label class="miniAppIcon icon-jiantou"></label></label>
+          </navigator>
+        </view>
+        <view>
+          <navigator url="/pages/user/usermsg" redirect hover-class="className">
+              <text>邮箱</text>
+              <label class="textLabel">546488261@qq.com<label class="miniAppIcon icon-jiantou"></label></label>
+          </navigator>
+          
+        </view>
+    </view>
+</view>

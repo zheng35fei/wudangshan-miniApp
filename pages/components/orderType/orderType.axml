@@ -1,0 +1,9 @@
+<template name="orderType">
+    <label class="orderInfo"  a:if="{{item.orderType=='ticket'}}">景区 |</label>
+    <label class="orderInfo"  a:if="{{item.orderType=='hotel'}}">酒店 |</label>
+    <label class="orderInfo"  a:if="{{item.orderType=='build'}}">自由行 |</label>
+    <label class="orderInfo"  a:if="{{item.orderType=='combo'}}">武当山 |</label>
+    <label class="orderInfo"  a:if="{{item.orderType=='repast'}}">美食 |</label>
+    <label class="orderInfo"  a:if="{{item.orderType=='shop'}}">商品 |</label>
+    <label class="orderInfo"  a:if="{{item.orderType=='repast'}}">美食 |</label>
+</template>

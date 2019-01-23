@@ -1,0 +1,65 @@
+.orderList{
+
+}
+.orderBox{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20rpx;
+    color: #666;
+}
+.orderBox .miniAppIcon{
+    margin-right: 10rpx;
+    font-size: 30rpx;
+}
+.orderBox .orderInfo{
+   color: #666;
+   font-size: 30rpx;
+}
+.orderBox .orderStatus.uppay{
+    color: #c33;
+    font-size: 30rpx;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+}
+.orderBox .orderDate{
+    color: #666;
+    font-size: 30rpx;
+}
+.orderBox .orderMoney{
+    color: #f00;
+    float: right;
+    font-size: 30rpx;
+}
+.orderBoxCon{
+    padding-top: 20rpx;
+}
+.orderBoxCon .orderTitle{
+   color: #333;
+   font-size: 30rpx;
+   margin-bottom: 20rpx;
+}
+.orderBoxCon .orderUse{
+    color: #666;
+    font-size: 30rpx;
+    margin: 15rpx 0;
+}
+.orderBoxCon .orderNum{
+   color: #666;
+   font-size: 30rpx;
+}
+.orderBoxCon .icon-jiantou{
+    line-height: 1;
+    font-size: 30rpx;
+    float: right;
+}
+.allOrder .order-tabing{
+    color: #f00;
+}
+.allOrder .order-tab{
+    color: #333;
+}
+.tab-show{
+    display: block;
+}
+.tab-hide{
+    display:none;
+}

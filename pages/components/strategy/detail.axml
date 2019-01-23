@@ -1,0 +1,19 @@
+<template name="strategyDetail">
+   <view class="detail">
+        <view class="detail-con">
+            <view class="detail-title">{{title}}</view> 
+            <view class="detail-msg">
+                <text class="detail-date">
+                    <label class="miniAppIcon icon-daizhifu"></label>{{data}}
+                </text>
+                <text class="detail-eyes">
+                    <label class="miniAppIcon icon-uniE2"></label>{{num}}
+                </text>
+            </view>
+        </view>
+        <view class="detail-content">
+            {{content}}
+
+        </view>    
+    </view>
+</template>    

@@ -1,0 +1,24 @@
+<template name="DateInterval">
+  <view class="dateIntervalWrap">
+    <text class="dateTitle">入住</text>
+    <view class="dateInputBox">
+      <input type="text" placeholder="" value="{{startDate}}" 
+      data-startLimitDate="{{limitDate[0]}}" 
+      data-endLimitDate="{{limitDate[1]}}" 
+      data-startDate="{{startDate}}" 
+      data-endDate="{{endDate}}" 
+      onFocus="_startDateInput"/>
+      <text class="miniAppIcon icon-date"></text>
+    </view>
+    <text class="dateTitle">离店</text>
+    <view class="dateInputBox">
+      <input type="text" placeholder="" value="{{endDate}}" 
+      data-startLimitDate="{{limitDate[0]}}" 
+      data-endLimitDate="{{limitDate[1]}}" 
+      data-startDate="{{startDate}}" 
+      data-endDate="{{endDate}}" 
+      onFocus="_endDateInput" />
+      <text class="miniAppIcon icon-date"></text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,15 @@
+@import '../components/dropdown/index.acss';
+@import '../components/moduleList/index.acss';
+@import '../components/search/index.acss';
+@import '../components/dateInterval/index.acss';
+
+/* bg高度和searchTop一致 */
+.expand .a-dropdown-bg {
+    top:101rpx;
+}
+
+/* 顶部搜索栏 */
+.searchTop {
+    height: 100rpx;
+    position: relative;
+}

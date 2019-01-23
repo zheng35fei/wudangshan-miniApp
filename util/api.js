@@ -1,4 +1,4 @@
-module.export = {
+export default {
   "domain": "http://www.wdwds.com",
   "main": {
     "index": {

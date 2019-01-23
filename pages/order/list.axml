@@ -1,3 +1,13 @@
+<import src="../components/orderList/index.axml"/>
 <view>
-  全部订单
+  <view class="allOrder">
+     <text class="{{orderStatus==5?'order-tabing':'order-tab'}}" data-num="5" onTap="clickOrder">全部订单</text>
+     <text class="{{orderStatus==0?'order-tabing':'order-tab'}}" data-num="0" onTap="clickOrder">待支付</text>
+     <text class="{{orderStatus==1?'order-tabing':'order-tab'}}" data-num="1" onTap="clickOrder">待消费</text>
+     <text class="{{orderStatus==2?'order-tabing':'order-tab'}}" data-num="2" onTap="clickOrder">已完成</text>
+     <text class="{{orderStatus==3?'order-tabing':'order-tab'}}" data-num="3" onTap="clickOrder">退款</text>
+  </view>
+  <template is="orderList" data="{{rows}}"></template>
+  
+  
 </view>

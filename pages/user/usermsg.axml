@@ -1,0 +1,10 @@
+<view>
+    <view class="msgtext">
+        <input type="text" placeholder="" auto-focus password />
+    </view>
+    
+
+    <navigator url="/pages/user/center" redirect class="submitBtn">
+        确认修改
+    </navigator>
+</view>

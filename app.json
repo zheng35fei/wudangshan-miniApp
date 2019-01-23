@@ -1,34 +1,36 @@
 {
   "pages": [
-    "pages/user/index",
-    "pages/index/index",
-    
-    "pages/order/list",
-    "pages/order/detail",
-
-    "pages/park/list",
     "pages/park/detail",
+    "pages/index/index",
+    "pages/strategy/detail",
+    "pages/order/list",
+    "pages/user/login", 
+    "pages/order/detail",
+    "pages/park/list",
+
+    "pages/strategy/list",
+    
+
+
+    "pages/user/index",
+    "pages/user/center",
+    "pages/user/index", 
+    "pages/user/usermsg",
 
     "pages/hotel/list",
     "pages/hotel/detail",
-    
     "pages/guide/list",
     "pages/guide/detail",
-    
     "pages/info/list",
     "pages/info/detail",
-    
-    "pages/strategy/list",
-    "pages/strategy/detail",
-
-    "pages/goods/list",
-    "pages/goods/detail"
+    "pages/shop/list",
+    "pages/shop/detail"
   ],
   "window": {
     "defaultTitle": "武当山",
     "backgroundColor": "#F5F5F9",
     "pullRefresh": true,
-    "allowsBounceVertical": true
+    "allowsBounceVertical": "YES"
   },
   "tabBar": {
     "textColor": "#fff",

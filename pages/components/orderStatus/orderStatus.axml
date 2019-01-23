@@ -1,0 +1,8 @@
+<template name="orderStatus">
+
+    <label class="orderStatus uppay" a:if="{{orderStatus==4}}">交易取消</label>
+    <label class="orderStatus uppay" a:elif="{{orderStatus==0}}">待支付</label>
+    <label class="orderStatus uppay" a:elif="{{orderStatus==1}}">待消费</label>
+    <label class="orderStatus uppay" a:elif="{{orderStatus==2}}">已完成</label>
+    <label class="orderStatus uppay" a:elif="{{orderStatus==3}}">退款</label>
+</template>

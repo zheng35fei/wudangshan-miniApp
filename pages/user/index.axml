@@ -27,7 +27,7 @@
 
   <view class="order-list">
     <view class="item-li">
-      <navigator url="/pages/order/list" hover-class="className">
+      <navigator url="/pages/user/center" hover-class="className">
         <text class="labelName">账户中心</text>
         <view class="fr miniAppIcon icon-jiantou"></view>
       </navigator>

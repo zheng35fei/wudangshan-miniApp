@@ -1,0 +1,29 @@
+
+.detail-line {
+    padding: 20rpx 30rpx;
+}
+.detail-head {
+    background-color: #fff;
+}
+.detail-name {
+    font-size: 36rpx;
+    color: #333;
+    padding: 20rpx 30rpx;
+}
+.comment-num {
+    color: #f63;
+}
+.comment-num-icon {
+    color: #999;
+}
+
+.goMap {
+    font-size: 24rpx;
+    color: #666;
+    margin-left: 15rpx;
+}
+.goMap .miniAppIcon {
+    color: #eebc48;
+    font-size: 22rpx;
+    margin-right: 8rpx;
+}

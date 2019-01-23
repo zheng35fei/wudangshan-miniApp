@@ -1,0 +1,50 @@
+.strategyBox{
+   background: #fff;
+   padding: 20rpx;
+   overflow: hidden;
+   border-bottom: 1px solid #eee;
+}
+.strategyImg{
+    width: 35%;
+    display: inline-block;
+    vertical-align: middle;
+    float: left; 
+}
+.imgcon{
+    width: 100%;
+    height: 100rpx;
+    border-radius: 10rpx;
+    vertical-align: middle;
+    height: 140rpx
+}
+.strategyLeft{
+    width: 65%;
+    display: inline-block;
+    float: left;
+}
+.strategyTitle{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding-left: 20rpx;
+}
+.strategyMsg{
+   padding-left: 20rpx;
+}
+.strategyDate{
+    font-size: 30rpx;
+    color: #666;
+    margin-top: 20rpx;
+}
+.strategyEyes{
+    float: right;
+    margin-top: 20rpx;
+
+}
+.strategyEyes text{
+    font-size: 30rpx;
+    color: #666;
+    margin-right: 20rpx;
+}

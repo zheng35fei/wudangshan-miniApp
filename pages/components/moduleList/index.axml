@@ -1,0 +1,95 @@
+<template name="ModuleList">
+  <view class="moduleList list-{{module}}-wrap">
+    <!-- park -->
+    <block a:if="{{module === 'park'}}">
+      {{module}}
+      <view class="list-item" a:for="{{rows}}">
+        <view class="item-pic">
+          <image src="{{item.linkMobileImg}}" mode="aspectFill" />
+        </view>
+        <view class="item-info">
+          <text class="item-title">{{item.name}}</text>
+          <view class="item-labels">
+            <text class="item-label" a:for="{{item.labelsName.split(',')}}" a:for-item="labelItem">{{labelItem}}</text>
+          </view>
+          <view class="item-tip-p">{{item.anotherName}}</view>
+          <view class="item-info-sold-price">
+            <view class="item-sold-box">
+              <text class="soldNum">{{item.salesNum}}</text>人已购买
+            </view>
+            <view class="item-price-box">
+              ¥<text class="priceNum">{{item.priceShow}}</text>起
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    
+    <!-- hotel -->
+    <block a:elif="{{module === 'hotel'}}">
+      {{module}}
+      <view class="list-item" a:for="{{rows}}">
+        <view class="item-pic">
+          <image src="{{item.linkMobileImg}}" mode="aspectFill" />
+        </view>
+        <view class="item-info">
+          <text class="item-title">{{item.name}}</text>
+          <view class="item-tip-p">
+            <text class="miniAppIcon icon-location"></text>
+            {{item.addr}}
+          </view>
+          <view class="item-info-sold-price">
+            <view class="item-price-box">
+              ¥<text class="priceNum">{{item.priceShow}}</text>起
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <!-- shop -->
+    <block a:elif="{{module === 'shop'}}">
+      <view class="list-item list-item-{{module}}" a:for="{{rows}}">
+        <view class="item-pic">
+          <image src="{{item.linkMobileImg}}" mode="aspectFill" />
+        </view>
+        <view class="item-info">
+          <text class="item-title">{{item.modelName}}</text>
+          <view class="item-tip-p">{{item.subtitle}}</view>
+          <view class="item-info-sold-price">
+            <view class="item-sold-box">
+              月销量:<text class="soldNum">{{item.salesNum}}</text>
+            </view>
+            <view class="item-price-box">
+              ¥<text class="priceNum">{{item.currentPrice}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+     <!-- strategy || news -->
+    <block a:elif="{{module === 'strategy' || module === 'news' }}">
+      <view class="list-item list-item-{{module}}" a:for="{{rows}}">
+        <view class="item-pic">
+          <image src="{{item.face_img || '/image/index/nav1.png'}}" mode="aspectFill" />
+        </view>
+        <view class="item-info">
+          <text class="item-title">{{item.name}}</text>
+          <view class="item-info-sold-price">
+            <view class="item-sold-box">
+              <text class="miniAppIcon icon-daizhifu"></text>
+              <text class="soldNum">{{item.createTime}}</text>
+            </view>
+            <view class="item-price-box">
+              <text class="miniAppIcon icon-uniE2"></text>
+              <text class="priceNum">{{item.viewNum}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+
+  </view>
+</template>

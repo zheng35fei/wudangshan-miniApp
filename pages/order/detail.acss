@@ -1,0 +1,112 @@
+.orderTop{
+    background: #fff;
+    padding: 20rpx;
+}
+.orderTop text{
+    color:#666;
+    font-size: 30rpx;
+}
+.orderTop text:nth-of-type(1){
+
+}
+.orderTop text:nth-of-type(2){
+    margin-left: 10rpx;
+}
+.orderCon{
+    background: #fff;
+    padding: 20rpx;
+    padding-top: 0;
+    padding-bottom: 20rpx;
+}
+.orderCon .orderTitle{
+    font-size: 40rpx;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    margin-bottom:20rpx;
+}
+.orderCon .orderLeft{
+    font-size: 30rpx;
+    color: #666;
+}
+.orderCon .orderLeft label{
+    color: #f66;
+    font-size: 30rpx;
+}
+.orderCon .orderRight{
+    float: right;
+    color: #666;
+    font-size: 30rpx;
+    margin-top: 0rpx;
+}
+.orderCon .orderMoney{
+    border-top: 1px solid #eee;
+    padding-top: 10rpx;
+}
+
+.textCon{
+    background: #fff;
+    margin-top: 20rpx;
+    border-top: 1px solid #eee;
+    font-size: 30rpx;
+}
+.textCon>view{
+   padding: 0 20rpx;
+   border-bottom: 1px solid #eee;
+   height: 100rpx;
+   line-height: 100rpx;
+}
+.textCon text{
+    height: 40rpx;
+    line-height: 40rpx;
+    display: inline-block;
+    vertical-align: middle;
+    width: 120rpx;
+}
+.textCon label{
+    height: 40rpx;
+    line-height: 40rpx;
+    color: #666;
+    margin-left: 20rpx;
+    margin-top: 10rpx;
+}
+.textCon input{
+    font-size: 30rpx;
+    vertical-align: middle;
+    text-indent: 30rpx;
+    padding-left: 20rpx;
+    height: 26rpx;
+    line-height: 26rpx;
+    color: #666;
+    vertical-align: middle;
+}
+.btnBox{
+    margin-top: 20rpx;
+    padding: 0 20rpx;
+}
+.gopay,.orderBtn{
+    background: #15bea0;
+    border: 1px solid #15bea0;
+    margin-bottom: 20rpx;
+    height: 75rpx;
+    line-height: 75rpx;
+    font-size: 35rpx;
+    border-radius: 4rpx;
+    text-align: center;
+    color: #fff;
+}
+
+.goback{
+    height: 75rpx;
+    line-height: 75rpx;
+    margin-bottom: 20rpx;
+    background: #fff;
+    border: 1px solid #eee;
+    font-size: 35rpx;
+    border-radius: 4rpx;
+    text-align: center;
+    color: #333;
+}

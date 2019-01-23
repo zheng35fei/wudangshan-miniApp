@@ -1,3 +1,14 @@
+<import src="../components/strategy/index.axml"/>
+
 <view>
-  New Page
+  <navigator url="" redirect hover-class="className">
+    <view class="searchBox">
+      <input type="text" placeholder="搜索关键字" placeholder-style="font-size:14px;color:#666"/>
+      <view  class="miniAppIcon icon-ss"></view>
+    </view>
+  </navigator>
+  
+   <template is="strategy" data="{{strategy}}"></template>
+
+
 </view>
